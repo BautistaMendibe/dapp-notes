@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="#">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <title>DApp Tasks</title>
+</head>
+
+<body>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-4">
+
+                <div class="card bg-white card-body mb-4 ">
+                    <h1>DApp</h1>
+                    <h6 class="text-muted">Descentralaze Task List</h6>
+                    <span id="spanWallet">Wallet:</span>
+                    <span id="account">12312441231231</span>
+                </div>
+
+                <form class="card card-body bg-white mb-4" id="taskForm">
+
+                    <h4>Save a task</h4>
+
+                    <input type="text" placeholder="Title" name="title" class="form-control my-2 ">
+
+                    <textarea rows="2" placeholder="I have to do..." name="description"
+                        class="form-control my-2 "></textarea>
+
+                    <button class="btn btn-primary my-2">Save</button>
+
+                    <!--Scripts-->
+                    <script src="/libs/@truffle/contract/dist/truffle-contract.min.js"></script>
+                    <script src="./app.js"></script>
+                    <script src="./ui.js"></script>
+                </form>
+            </div>
+            <div class="col-md-8">
+                <div id="taskList"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

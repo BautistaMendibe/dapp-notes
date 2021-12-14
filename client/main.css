@@ -1,0 +1,26 @@
+body {
+    color: black;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(247,236,244,1) 0%, rgba(247,248,250,1) 100%);
+}
+
+h1 { 
+   color: #ff007a; 
+   font-weight: bold;
+}
+
+span {
+    color: #2f2f2f;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#spanWallet, #account {
+    font-size: small;
+}
+
+#titleTask {
+    color: #2f2f2f;
+    font-weight: bold;
+    
+}
